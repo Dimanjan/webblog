@@ -1,0 +1,77 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://fonts.googleapis.com/css?family=Lato:300,400" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
+  <script type="text/javascript" href="{% static 'js/test.js' %}"></script>
+  <link rel="stylesheet" type="text/css" href="{% static 'css/styles.css' %}">
+  <title></title>
+</head>
+
+<body>
+  <!-- partial:index.partial.html -->
+  <div class="page-wrapper">
+    <div class="nav-wrapper">
+      <div class="grad-bar"></div>
+      <nav class="navbar">
+        <img src="https://1.bp.blogspot.com/-lPkRMGBN4Ug/Xiqt-pInmnI/AAAAAAAABIc/fFAt9fSJA1ILZ-mgsoR1koysiEEqxOGjACLcBGAsYHQ/s320/LogoMakr_9xcbIZ.png" alt=" Logo">
+        <div class="menu-toggle" id="mobile-menu">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
+        <ul class="nav no-search">
+          <li class="nav-item"><a href="{% url 'home' %}"> Home </a></li>
+          <li class="nav-item"><a href="#"> Stats </a></li>
+          <li class="nav-item"><a href="#"> About </a></li>
+          <li class="nav-item"><a href="#"> Archive </a></li>
+          <i class="fas fa-search" id="search-icon"></i>
+          <input class="search-input" type="text" placeholder="Search..">
+        </ul>
+      </nav>
+    </div>
+  </div>
+  <div class="content-paragraph">
+    <div class="content">
+      <br>
+      {% block content %} {% endblock %}
+      <br>
+      <br>
+    </div>
+  </div>
+  <br>
+  {% block authorcard %} {% endblock %}
+  <div class="reactions">
+    <ul class="react-list">
+      <li>👍</li>
+      <li>😊</li>
+      <li>☹️</li>
+      <li>👿</li>
+    </ul>
+  </div>
+  <div class="comment-section">
+    <h4>Comments</h4>
+    <div>
+      <ul>
+        <li class="comment">
+          <p>This is a great article!</p>
+        </li>
+        <li class="comment">
+          <p>Informative and helpful!</p>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <br>
+  <br>
+  <br>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
+  <script src="{% static 'js/test.js' %}"></script>
+</body>
+
+</html>
