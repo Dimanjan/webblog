@@ -10,6 +10,7 @@
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
   <script type="text/javascript" href="{% static 'js/test.js' %}"></script>
   <link rel="stylesheet" type="text/css" href="{% static 'css/styles.css' %}">
+  <link rel="stylesheet" type="text/css" href="{% static 'css/author_card.css' %}">
   <title></title>
 </head>
 
@@ -41,34 +42,11 @@
       <br>
       {% block content %} {% endblock %}
       <br>
-      <br>
     </div>
   </div>
+  <br>
   <br>
   {% block authorcard %} {% endblock %}
-  <div class="reactions">
-    <ul class="react-list">
-      <li>👍</li>
-      <li>😊</li>
-      <li>☹️</li>
-      <li>👿</li>
-    </ul>
-  </div>
-  <div class="comment-section">
-    <h4>Comments</h4>
-    <div>
-      <ul>
-        <li class="comment">
-          <p>This is a great article!</p>
-        </li>
-        <li class="comment">
-          <p>Informative and helpful!</p>
-        </li>
-      </ul>
-    </div>
-  </div>
-  <br>
-  <br>
   <br>
   <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
   <script src="{% static 'js/test.js' %}"></script>

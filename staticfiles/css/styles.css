@@ -466,32 +466,5 @@ blockquote p:first-child:before {
   animation-duration: 3s;
   animation-delay: 0.5s;
   animation-timing-function: linear;
-  animation-iteration-count: infinite;
-}
-
-
-.reactions {
-  display: none;
-  width: 60%;
-  margin: auto;
-  min-width: 480px;
-}
-
-.reactions ul button {
-  list-style: none;
-  width: 30%;
-  background-color: rgba(0, 255, 255, 0.5);
-
-}
-
-.comment-section {
-  display: none;
-  width: 60%;
-  margin: auto;
-  min-width: 480px;
-
-}
-
-.comment-section li {
-  list-style: none;
+  animation-iteration-count: 2;
 }

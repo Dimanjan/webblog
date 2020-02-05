@@ -1,0 +1,109 @@
+.card {
+  box-shadow: 10px 20px 30px rgba(0, 0, 0, 0.2);
+  background: #ffffff;
+  border-radius: 10px;
+  margin: auto;
+  max-width: 400px;
+  min-height: 200px;
+  padding: 2.5rem;
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  -webkit-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+  transition: ease 1s;
+}
+
+.card:after {
+  content: "";
+  display: block;
+  width: 260px;
+  height: 260px;
+  background: #f4f7f7;
+  border-radius: 100%;
+  position: absolute;
+  right: -20px;
+  bottom: -80px;
+  z-index: -1;
+}
+
+.card-header {
+  background-size: cover;
+  align-items: flex-start;
+  display: flex;
+  justify-content: space-between;
+  font-family: 'Lato', 'Arial', sans-serif;
+}
+
+.card img {
+  border-radius: 6px;
+  width: 50px;
+  height: 50px;
+}
+
+.card h1 {
+  font-weight: 700;
+  margin: 0 0 1rem;
+}
+
+.card h2 {
+  font-weight: 600;
+  margin: 0;
+  font-family: 'Lato', 'Arial', sans-serif;
+}
+
+.card nav {
+  align-items: center;
+  bottom: 40px;
+  display: flex;
+  justify-content: space-between;
+  left: 40px;
+  position: absolute;
+  font-family: 'Lato', 'Arial', sans-serif;
+}
+
+.card nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  font-family: 'Lato', 'Arial', sans-serif;
+}
+
+.card nav ul li {
+  display: table-row;
+  font-family: 'Lato', 'Arial', sans-serif;
+}
+
+.card nav ul a {
+  display: table-cell;
+  text-decoration: none;
+  color: #535c68;
+  padding: 0.3rem 2.5rem;
+  font-family: 'Lato', 'Arial', sans-serif;
+}
+
+@keyframes animate-card {
+  25% {
+    transform: rotate(0.5deg);
+  }
+
+  50% {
+    transform: rotate(0deg);
+  }
+
+  75% {
+    transform: rotate(-0.5deg);
+  }
+
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+.card:hover {
+  animation-name: animate-card;
+  animation-duration: 3s;
+  animation-delay: 0.5s;
+  animation-timing-function: linear;
+  animation-iteration-count: 2;
+}
